@@ -4,11 +4,13 @@ let thas = ["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse",
 
 function gooseFilter (birds) {
     let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
-        return birds.reduce((r,e,i,a) => {
+        birds.reduce((r,e,i,a) => {
             r = e
         }, [])
                 return r.filter((e,i) => {
-                    if(e.includes)
+                    if(e.includes(thas)){
+                        return false
+                    }
                 })
   };
   
