@@ -1,6 +1,7 @@
-function blah() {
-    return 'Blaahhh'
+let string = 'Blaahhh'
+function blah(str) {
+    return str.charAt(0)
 }
 
-console.log(blah())
+console.log(blah(string))
 
