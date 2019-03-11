@@ -1,5 +1,6 @@
-function blah3() {
-    return 'Blaahhh3'
+let string = 'Blaahhh3'
+function blah3(str) {
+    return str.charAt(4).toUpperCase()
 }
 
-console.log(blah3())
+console.log(blah3(string))
