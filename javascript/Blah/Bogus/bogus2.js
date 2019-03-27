@@ -1,4 +1,3 @@
-function bogus2(){
-    return 'Total bogus'
+function bogus2() {
+    return 'yo'
 }
-console.log(bogus2())
