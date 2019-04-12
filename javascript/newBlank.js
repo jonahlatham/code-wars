@@ -1,7 +1,7 @@
 
-let totalCost = d * 50
 
-let totalCost = (n) => {
+let rentalCarCost = (n) => {
+    let totalCost = n * 40
     if (n >= 7) {
         return totalCost - 50
     } else if (n >= 3) {
