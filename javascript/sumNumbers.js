@@ -16,8 +16,6 @@ function sumMix(x){
 
 console.log(sumMix([9, 3, '7', '3']))
 
-console.log(Date())
-
 // function sumMix(x){
 //     return x.map(a => +a).reduce((a, b) => a + b);
 //   }
