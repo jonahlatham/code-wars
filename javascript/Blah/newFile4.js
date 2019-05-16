@@ -1,3 +1,0 @@
-function four() {
-    return 'four'
-}
