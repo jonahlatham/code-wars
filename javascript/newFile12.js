@@ -1,4 +1,0 @@
-
-function alt() {
-    return false
-}
