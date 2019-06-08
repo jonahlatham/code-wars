@@ -1,10 +1,11 @@
 
-const meanCalc = () => {
     x = [1, 2, 3, 4, 5, 6];
-    z = 0;
 
-    for(i = 0; i <= x.length; i++){
-        z += x[i]
-    }
+    const meanCalc = (arr) => {
+    let mean = arr.reduce((r,e,i,a) => {
+        console.log(e)
+        return r+=e
+    },0)
+    return mean
 }
-console.log(meanCalc(z[i]))
+console.log(meanCalc(x))

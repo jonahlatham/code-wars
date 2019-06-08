@@ -1,21 +1,11 @@
-//1st attempt
-// const count = (x, n) => {
-//    z = [];
-//    for (i=1; i<=n; i++){
-//        z.push(i * x)
-//    }
-//     return z
-// }
-// console.log(count(3, 10))
 
-//Yeet
+const countByX = (x, arr) => {
 
-const countByX = (x, n) => {
-    z = []
-    for (i = 1; i <= n; i++) {
-        z.push(i * x)
+    for(i=0; i<=10; i++){
+        console.log(i)
+        arr.push(i * x)
     }
-    return z
+    return arr
 }
 
-console.log(countByX(8, 7));
+console.log(countByX(5, []));

@@ -12,4 +12,4 @@ let rentalCarCost = (n) => {
 }
 
 
-console.log(totalCost(4))
+console.log(rentalCarCost(4))

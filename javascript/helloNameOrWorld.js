@@ -1,33 +1,12 @@
-// Define a method hello that returns "Hello, Name!" 
-// to a given name, or says Hello, World! if name is not 
-// given (or passed as an empty String).
-
-// Assuming that name is a String and it checks for user 
-// typos to return a name with a first capital letter (Xxxx).
-
-// Examples:
-
-// hello "john"   => "Hello, John!"
-// hello "aliCE"  => "Hello, Alice!"
-// hello          => "Hello, World!" # name not given
-// hello ''       => "Hello, World!" # name is an empty String
-
-
-// MINE!!! WRONG!
-
-// function hello(name) {
-//     return 'hello' hello(name);
-//   }
- 
-
-//      CORRECT
+// https://www.codewars.com/kata/57e3f79c9cb119374600046b
 
 function hello(name){
-    if (name){
-      return "Hello, " + name.substring(0,1).toUpperCase() + name.substring(1).toLowerCase() + '!';
-    } else {
-      return "Hello, World!";
-    }
+  if(name){
+    return `Hello ${name.charAt(0).toUpperCase() + name.slice(1)}`
+  } else {
+    return 'hello world'
   }
-
-// https://www.codewars.com/kata/57e3f79c9cb119374600046b
+    }
+  
+    console.log(hello('jack'))
+    
