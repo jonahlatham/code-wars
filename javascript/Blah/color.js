@@ -1,4 +1,0 @@
-
-function what(){
-    return 'color'
-}
