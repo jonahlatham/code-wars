@@ -18,7 +18,6 @@ function uniquePush(arr, obj) {
         }
         return r
     }, true)
-    console.log(isNotDupe)
     if (isNotDupe) {
         arr.push(obj)
     }
