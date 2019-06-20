@@ -4,12 +4,15 @@ let answers = ['a', 'b', 'c', 'd', 'e', 'f']
 let mine = ['b', 'b', 'c', 'i', 'b', 'f']
 
 function checkExam(array1, array2) {
-    let art = array2.filter((e, i) => {
-        if(array2.includes(array1[e])){
-            return i
+    const answer = array1.reduce((r, e, i, a) => {
+        if (e === array2[i]) {
+            r += 4
+        } else if (e !== array2[i] && array2[i] !== '') {
+            r -= 1
         }
-        })
-        return art
-    }
+        return r
+    }, 0)
+    return answer > 0 ? answer : 0
+}
 
 console.log(checkExam(answers, mine))
