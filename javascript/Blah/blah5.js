@@ -1,5 +1,4 @@
 function blah5() {
-    return 'Blaahhh5'
+    return 'Blahh5'
 }
-
 console.log(blah5())
