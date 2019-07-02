@@ -4,4 +4,3 @@ function blah2(str) {
 }
 
 console.log(blah2(string1))
-
