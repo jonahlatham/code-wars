@@ -5,7 +5,7 @@ function tester(arr1,arr2){
     let answer = arr1.reduce((r,e,i) => {
       if(e===arr2[i]){
         r+=4
-      } else if(e !== arr2[i] && e !== ''){
+      } else if(arr2[i] !== '' && e !== arr2[i]){
         r-=1
       }
       return r
