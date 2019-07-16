@@ -1,9 +1,9 @@
-let string = 'Hello world' // 5
+let string = 'Hello world around us and others' // 5
 function addLength(str) {
-    let strs =  str.split(' ').map((e,i)=>{
-        return e[4]
+    let strs = str.split(' ')
+    return strs.map((e,i,a)=>{
+        return a[i] + ' ' + a[i].split('').length
     })
-    return strs
     }
     
 console.log(addLength(string))
