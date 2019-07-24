@@ -1,14 +1,15 @@
 let string = 'Hello big world'
 let str2 = 'this is the string to be reversed '
 
-function revIt(str){
+function reverse(str){
     let realRev = str.split(' ').map((e,i)=>{
-        if(i%2===0){
+        if(i%2!==0){
             return e.split('').reverse().join('')
         } else {
             return e
         }
     })
-    return realRev
+    return realRev.join(' ').trim()
 }
-console.log(revIt(str2))
+
+console.log(reverse(str2))
