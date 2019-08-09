@@ -13,3 +13,4 @@ function findOdd(A) {
 }
 
 console.log(findOdd(array))
+//
