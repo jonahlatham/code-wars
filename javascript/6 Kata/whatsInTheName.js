@@ -7,10 +7,10 @@ function nameInStr(str, name) {
     console.log(stringer)
     let namer = name.toLowerCase().split('')
     return stringer.reduce((r, e, i) => {
-       console.log(namer[r])
-       if(namer[r] === e){
-           r++
-       }
+        console.log(namer[r])
+        if (namer[r] === e) {
+            r++
+        }
         return r
     }, 0) === namer.length
 }
