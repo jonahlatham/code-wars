@@ -1,4 +1,4 @@
-let array = [';)', ':)', 'jk']
+let array = [';)', ':)', 'jk', ':D']
 function countSmiles(arr) {
     let answer = 0
     let arraySplit = arr.map((e, i) => {
