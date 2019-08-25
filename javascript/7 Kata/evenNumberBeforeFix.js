@@ -10,5 +10,5 @@ let evnCnt = 0
     })
     return evnCnt
   }
- 
+
   console.log(evenNumbersBeforeFixed(sequence, 4))

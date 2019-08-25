@@ -1,5 +1,5 @@
 // https://www.codewars.com/kata/vowel-count/train/javascript
-
+ 
 let string = 'hello world' //3
 
 function getCount(str) {
