@@ -1,0 +1,3 @@
+function nope() {
+    return 'Nope!'
+}
