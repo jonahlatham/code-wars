@@ -1,22 +1,17 @@
-
+// https://www.codewars.com/kata/tidy-number-special-numbers-series-number-9/train/javascript
 
 let arr = [1, 4, 2, 6, 4]
-let num = 23421
+let num = 1234
 console.log(num.toString().split(''))
 
 function tidyNumber(n) {
-    let isIt = n.toString().split('').map((e,i)=>{
-        if(n[i]>n[i+i]){
-            return false
-        } else {
-            return true
+    let number = n.toString().split('').reduce((r,e,i,a)=>{
+        if(Number(e)>a[i+1]){
+            return r = false
         }
-    })
-    if(isIt.includes(true)){
-        return false
-    } else {
-        return true
-    }
+            return r
+    },true)
+    return number
 }
 
 console.log(tidyNumber(num))
