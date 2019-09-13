@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/merge-two-arrays/train/javascript
+
 let arr1 = [1,4,5,66,33,22,14,72]
 let arr2 = ['a','u','d','e','p']
 
