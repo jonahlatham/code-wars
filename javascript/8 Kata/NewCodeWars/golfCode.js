@@ -1,3 +1,4 @@
+// https://www.codewars.com/kata/write-a-code-golf-scoring-function/train/javascript
 
 let str = '  hello world 345  my na me is jonah'
 function golfScore(code) {
