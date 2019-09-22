@@ -10,4 +10,4 @@ const sequenceSum = (begin, end, step) => {
     }, 0)
 };
 
-console.log(sequenceSum(1, 10, 2))
+console.log(sequenceSum(1, 10, 2))  
