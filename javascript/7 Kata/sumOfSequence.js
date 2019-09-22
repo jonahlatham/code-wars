@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/sum-of-a-sequence/train/javascript
+
 const sequenceSum = (begin, end, step) => {
     let arr = []
     for (let i = begin; i <= end; i++) {
