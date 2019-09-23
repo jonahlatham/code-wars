@@ -1,3 +1,3 @@
 function crap(){
-    return 'crap'
-}
+    return 'c r a p'
+}   
