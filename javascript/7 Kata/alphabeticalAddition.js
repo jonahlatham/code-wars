@@ -2,10 +2,15 @@
 function addLetters(...letters) {
     let alph = 'abcdefghijklmnopqrstuvwxyz'
     const arr = alph.split('')
-    let reducer = arr.reduce((r, e, i) => {
-        if (letters.sort().includes(e)) {
-            r += (i + 1)
-        }
+    const lettersOpp = letters.reduce((r, e) => {
+        r[e] ? r[e]++ : r[e] = 1
+        return r
+    }, {})
+    console.log(lettersOpp)
+    let reducer = Object.keys(lettersOpp).reduce((r, e, i) => {
+        const increaseNum = arr.indexOf(e) + 1
+        console.log(increaseNum)
+        r += increaseNum * lettersOpp[e]
         return r
     }, 0)
     while (reducer > 26) {
@@ -14,4 +19,4 @@ function addLetters(...letters) {
     return letters[0] === undefined ? 'z' : arr[reducer - 1]
 }
 
-console.log(addLetters('a', 'z', 'd'))
+console.log(addLetters('a', 'a', 'a', 'd', 'z', 'z', 'd'))
