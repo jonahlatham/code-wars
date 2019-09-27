@@ -6,7 +6,6 @@ function addLetters(...letters) {
         r[e] ? r[e]++ : r[e] = 1
         return r
     }, {})
-    console.log(lettersOpp)
     let reducer = Object.keys(lettersOpp).reduce((r, e, i) => {
         const increaseNum = arr.indexOf(e) + 1
         console.log(increaseNum)
